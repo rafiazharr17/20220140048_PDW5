@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Menghilangkan margin bawaan dari body */
+  padding: 0; /* Menghilangkan padding bawaan dari body */
+  background-image: url("bg.jpg"); /* Ganti 'background-image.jpg' dengan URL gambar background Anda */
+  background-size: cover; /* Menyesuaikan gambar background agar mencakup seluruh area */
+  background-position: center; /* Posisi gambar background di tengah */
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    color: #000000;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.table {
+  width: 45%;
+  margin: 20px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  animation: slideIn 3s ease forwards;
+}
+
+.table th,
+.table td {
+  border: 2px solid #000000;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  animation: slideIn 4s ease forwards;
+}
+
+.table th {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+/* Style for player images */
+.table img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
